@@ -1,3 +1,4 @@
+# US-05: удаление и редактирование
 main
 import calendar
 from data_service import get_by_period, get_all_entries
