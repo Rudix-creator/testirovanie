@@ -1,4 +1,4 @@
-# 💰 Личные финансы — Finance Tracker
+# Личные финансы — Finance Tracker
 
 **Версия:** 1.0.2  
 **Язык:** Python 3.12  
