@@ -1,4 +1,5 @@
 # US-02: сводка за месяц
+# US-03: бюджетный лимит
 import calendar
 from data_service import get_by_period, get_all_entries
 
