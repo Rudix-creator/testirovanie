@@ -1,6 +1,4 @@
 # US-02: сводка за месяц
-# US-03: бюджетный лимит
-# US-04: норма сбережений
 import calendar
 from data_service import get_by_period, get_all_entries
 
