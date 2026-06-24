@@ -1,4 +1,5 @@
 # US-06: поиск по описанию и категории
+
 # US-05: удаление и редактирование
 main
 import calendar
@@ -30,6 +31,7 @@ def calculate_balance(entries: list) -> dict:
     expense = round(sum(float(e["amount"]) for e in entries if e["type"] == "expense"), 2)
     balance = round(income - expense, 2)
     return {"income": income, "expense": expense, "balance": balance}
+
 
 # US-02: сводка за месяц
 # US-03: бюджетный лимит
@@ -115,6 +117,7 @@ def period_stats(start_date: str, end_date: str) -> dict:
             "avg_expense_per_day": 0,
             "savings_rate": 0,
         }
+# US-08: топ категорий расходов
 
     bal = calculate_balance(entries)
     days = len({e["date"] for e in entries})
