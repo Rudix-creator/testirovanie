@@ -134,6 +134,7 @@ def period_stats(start_date: str, end_date: str) -> dict:
         "savings_rate": savings_rate,
     }
 
+# US-09: разбивка по категориям
 
 def category_breakdown(start_date: str, end_date: str) -> dict:
     """Разбивка сумм по категориям за период."""
