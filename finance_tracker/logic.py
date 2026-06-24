@@ -1,3 +1,4 @@
+# US-06: поиск по описанию и категории
 import calendar
 from data_service import get_by_period, get_all_entries
 
