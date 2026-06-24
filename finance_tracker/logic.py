@@ -1,3 +1,4 @@
+# US-02: сводка за месяц
 import calendar
 from data_service import get_by_period, get_all_entries
 
