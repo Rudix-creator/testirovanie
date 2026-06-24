@@ -1,5 +1,4 @@
-# US-02: сводка за месяц
-# US-03: бюджетный лимит
+main
 import calendar
 from data_service import get_by_period, get_all_entries
 
@@ -30,7 +29,8 @@ def calculate_balance(entries: list) -> dict:
     balance = round(income - expense, 2)
     return {"income": income, "expense": expense, "balance": balance}
 
-
+# US-02: сводка за месяц
+# US-03: бюджетный лимит
 def monthly_summary(year: int, month: int, budget_limit: float = None) -> dict:
     """Сводка за месяц с опциональной проверкой бюджетного лимита."""
     if year <= 0:
@@ -71,7 +71,7 @@ def monthly_summary(year: int, month: int, budget_limit: float = None) -> dict:
 
     return result
 
-
+# US-06: поиск по описанию и категории
 def search_by_description(keyword: str) -> list:
     """Поиск записей по описанию или категории (регистронезависимый)."""
     if not keyword or not keyword.strip():
